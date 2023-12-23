@@ -1,3 +1,7 @@
+mkdir -p reads
+mkdir -p assembly
+mkdir -p quality_control/fastp quality_control/fastqc quality_control/multiqc/before  quality_control/multiqc/after
+
 echo "projet/"
 echo "├── assembly"
 echo "│   ├── Sample1"
