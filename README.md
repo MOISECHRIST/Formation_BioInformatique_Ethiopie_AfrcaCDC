@@ -1,4 +1,5 @@
 # Formation_BioInformatique_Ethiopie_AfrcaCDC
+---------------------------------------------------------------------------------------------
 <h2>1- Assembly Setup Environment</h2>
 
 python3 -m pip install --upgrade pip</br>
@@ -7,7 +8,7 @@ conda activate Assembly_reads</br>
 conda deactivate Assembly_reads</br>
 conda create -n flye</br>
 conda activate flye</br>
-
+-----------------------------------------------------------------------------------------------
 <h2>2- Install Tools</h2> 
 
 <h3>2.1- Short Reads</h3>
@@ -37,7 +38,7 @@ conda install -c bioconda flye
 flye --help
 
 <h3>2.3- Visualiser assemblage</h3>
-<a hrelf=rrwick.github.io/Bandage>Download Bandate</a> 
+[Download Bandate](rrwick.github.io/Bandage)</br> 
 <strong>NB: Download, unzip and run bandage</strong>
 
 pip3 install quast</br>
