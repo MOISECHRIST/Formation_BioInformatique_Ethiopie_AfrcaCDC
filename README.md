@@ -1,32 +1,29 @@
 # Formation_BioInformatique_Ethiopie_AfrcaCDC
-<h2>Assembly Setup Environment</h2>
+<h2>1- Assembly Setup Environment</h2>
 
-python3 -m pip install --upgrade pip
-conda create -n Assembly_reads python=3
-conda activate Assembly_reads
-conda deactivate Assembly_reads
-conda create -n flye
-conda activate flye
+python3 -m pip install --upgrade pip</br>
+conda create -n Assembly_reads python=3</br>
+conda activate Assembly_reads</br>
+conda deactivate Assembly_reads</br>
+conda create -n flye</br>
+conda activate flye</br>
 
-<h2>Install Tools</h2> 
+<h2>2- Install Tools</h2> 
 
-<h3>Short Reads</h3>
+<h3>2.1- Short Reads</h3>
 
-<h4>Quality control</h4>
+<h4>2.1.1- Quality control</h4>
 
 conda install -c bioconda fastqc multiqc fastp
 
-<h4>Assembly</h4>
+<h4>2.1.2- Assembly</h4>
 
-conda install -c bioconda spades
-spades.py
+conda install -c bioconda spades</br>
+spades.py</br>
 
-rrwick.github.io/Bandage
-NB: Telecharger et dezipper le fichier d'execution de Bandage
+<h3>2.2- Long Reads</h3>
 
-<h3>Long Reads</h3>
-
-<h4>Quality control</h4>
+<h4>2.2.1- Quality control</h4>
 
 pip install NanoPlot
 NanoPlot --help
@@ -34,16 +31,18 @@ NanoPlot --help
 pip install NanoFilt
 NanoFilt --help
 
-<h3>Assembly</h3>
+<h4>2.2.2- Assembly</h4>
 
 conda install -c bioconda flye
 flye --help
 
-<h3>Visualiser assemblage</h3>
+<h3>2.3- Visualiser assemblage</h3>
+<a hrelf=rrwick.github.io/Bandage>Download Bandate</a> 
+<strong>NB: Download, unzip and run bandage</strong>
 
-pip3 install quast
+pip3 install quast</br>
 quast.py
 
-<h3>Blast</h3>
- conda install -c bioconda blast
+<h3>2.4- Blast</h3>
+ conda install -c bioconda blast</br>
  blastx -query scalfolds.fasta -subject base_donnees_reference -outfmt '6 qseqid qlen qstart qend sseqidslen sstart send bitscore evalue pident' -out blast.tsv
