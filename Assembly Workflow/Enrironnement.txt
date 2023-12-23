@@ -1,0 +1,54 @@
+1- Environnement
+
+python3 -m pip install --upgrade pip
+conda create -n Assembly_reads python=3
+conda activate Assembly_reads
+conda deactivate Assembly_reads
+conda create -n flye
+conda activate flye
+
+2- Outils 
+
+2.1- Short Reads
+
+2.1.1- Controle qualité
+
+conda install -c bioconda fastqc multiqc fastp
+
+2.1.2- Assembleur
+
+conda install -c bioconda spades
+spades.py
+
+2.1.3- Visualiser assemblage
+
+pip3 install quast
+quast.py
+
+rrwick.github.io/Bandage
+NB: Telecharger et dezipper le fichier d'execution de Bandage
+
+2.2- Long Reads
+
+2.2.1- Controle Qualite
+
+pip install NanoPlot
+NanoPlot --help
+
+pip install NanoFilt
+NanoFilt --help
+
+2.2.2- Assembleur
+
+conda install -c bioconda flye
+flye --help
+
+3- Blast
+ conda install -c bioconda blast
+ blastx -query scalfolds.fasta -subject base_donnees_reference -outfmt '6 qseqid qlen qstart qend sseqidslen sstart send bitscore evalue pident' -out blast.tsv
+ 
+ 
+
+ 
+ 
+ 
