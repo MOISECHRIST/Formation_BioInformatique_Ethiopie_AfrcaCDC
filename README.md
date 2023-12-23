@@ -1,7 +1,7 @@
 # Formation_BioInformatique_Ethiopie_AfrcaCDC
 
 <h1>ASSEMBLY</h1>
-<h2>1- Assembly Setup Environment</h2>
+<h2>1- setting up the assembly environment </h2>
 
 python3 -m pip install --upgrade pip</br>
 conda create -n Assembly_reads python=3</br>
