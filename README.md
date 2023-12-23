@@ -46,6 +46,7 @@ conda activate spades</br>
 conda deactivate Assembly_reads</br>
 conda create -n Flye</br>
 conda activate Flye</br>
+bash Assembly\ Workflow/structure.sh</br>
 
 <h3>2- Install Tools</h3> 
 
