@@ -37,7 +37,7 @@ conda activate Mapping</br>
 
 <h4>2.2- Long Reads</h4>
 
-<h2>ASSEMBLY</h2>
+<h2>DE NOVO ASSEMBLY</h2>
 <h3>1- Setting up the assembly environment </h3>
 
 python3 -m pip install --upgrade pip</br>
